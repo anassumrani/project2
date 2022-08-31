@@ -4,7 +4,7 @@ import random
 
 
 @app.route('/get/age', methods=('GET'))
-    def get_age(self):
-        age = ["20-25","26-30","30+"]
-        randomnum = random.randint(0-2)
-        return Response(age[randomnum], mimetype="text/plain")
+def get_age(self):
+    age = ["20-25","26-30","30+"]
+    randomnum = random.choice(age)
+    return Response(randomnum, mimetype="text/plain")

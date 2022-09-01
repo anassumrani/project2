@@ -1,0 +1,5 @@
+# echo '' > ~/.ssh/known_hosts
+
+cat ~/.ssh/id_rsa.pub
+
+pip install -r requirements.txt 

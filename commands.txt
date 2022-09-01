@@ -3,3 +3,6 @@
 cat ~/.ssh/id_rsa.pub
 
 pip install -r requirements.txt 
+
+# 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
+# git remote set-url origin https://anassumrani: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@github.com/anassumrani/project2.gitgit 

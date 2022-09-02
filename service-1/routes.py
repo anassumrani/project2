@@ -13,9 +13,9 @@ def home_page(self):
 
 @app.route('/get/data_age', methods=["GET"])
 def get_data_age(self):
-    age = requests.get()
+    age = requests.get("http://age_of_patient:5000/get/age")
     disease = requests.get()
-    doctor = response.text()
+    doctor = requests.post()
     
 
     

@@ -2,7 +2,7 @@ FROM python:latest
 
 COPY . .
 
-EXPOSE 5001
+EXPOSE 5003
 
 ADD  app.py .
 

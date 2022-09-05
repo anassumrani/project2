@@ -34,3 +34,10 @@
     name: 
     - docker 
     - jsondiff 
+
+- name: "adding a user"
+  user:
+    name: anas 
+    groups: docker
+    append: yes 
+    

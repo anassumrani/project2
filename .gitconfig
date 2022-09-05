@@ -2,4 +2,9 @@
 	email = sumranianas@hotmail.com
 	name = anassumrani
 # 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
-# git remote set-url origin https://anassumrani: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@github.com/anassumrani/project2.git
+# git remote set-url origin https://anassumrani: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@github.com/anassumrani/project2.git
+
+git config --global user.email "sumranianas@hotmail.com"
+git config --global user.name "anassumrani"
+
+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

@@ -1,0 +1,11 @@
+FROM python:latest 
+
+COPY . .
+
+EXPOSE 5001
+
+ADD  app.py .
+
+RUN pip3 install -r requirements.txt
+
+CMD ["python", "app.py"]

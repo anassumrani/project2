@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  bold_napier:
+    image: doctor
+   
+  charming_beaver:
+    image: age
+    

@@ -1,7 +1,7 @@
-from doctor import app
+from application import app
 from flask import Response, request
 import random
-import application
+
 @app.route('/get/doctor', methods=["POST"])
 def get_doctor(self):
     data = request.get_json()

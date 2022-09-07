@@ -6,8 +6,8 @@ services:
   age:
     image: age
 
-  service-1:
-    image: service-1
+  service_1:
+    image: service_1
     
   disease:
     image: disease

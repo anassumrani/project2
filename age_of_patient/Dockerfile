@@ -1,4 +1,11 @@
-FROM python3.6
+FROM python:latest 
+
 COPY . .
-pip3 install -r requirements.txt
-ENTRYPOINT [ "PYTHON3","app.py" ]
+
+EXPOSE 5001
+
+ADD  app.py .
+
+RUN pip3 install -r requirements.txt
+
+CMD ["python", "app.py"]

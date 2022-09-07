@@ -1,8 +1,13 @@
 version: '3.8'
 services:
-  bold_napier:
+  doctor:
     image: doctor
    
-  charming_beaver:
+  age:
     image: age
+
+  service-1:
+    image: service-1
     
+  disease:
+    image: disease

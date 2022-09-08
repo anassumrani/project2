@@ -6,3 +6,6 @@ pip install -r requirements.txt
 
 # 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
 # git remote set-url origin https://anassumrani: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@github.com/anassumrani/project2.gitgit 
+
+
+curl -XPOST -H "Content-type: application/json" -d '{"age":"25-30","disease":"cancer"}' 'http://localhost:5003/get/doctor'

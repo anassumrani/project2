@@ -6,16 +6,13 @@ import random
 import requests
 
 
-@app.route('/', methods=["GET"])
-def home_page(self):
-    return render_template('form.html')
-
-
 @app.route('/get/data', methods=["GET"])
-def get_data(self):
-    age = requests.get("http://age_of_patient:5000/get/age")
-    disease = requests.get("http://disease:5000/get/disease")
-    doctor = requests.post("http://doctor:5000//get/doctor")
+def get_data():
+    age = requests.get("http://age:5001/get/age")
+    disease = requests.get("http://disease:5002/get/disease")
+    doctor = requests.post("http://doctor:5003/get/doctor", json={"age": age.text, "disease": disease.text })
+    return render_template('index.html', doctor = doctor.text)
     
 
     
+   

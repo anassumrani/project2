@@ -5,6 +5,9 @@
     <body style="background-image:{{url_for('static',filename=doctor.jpg)}}; font-family:calibri";>
         <h1>NHS get a doctor</h1>
         {% block body %}
+        {{age}}
+        {{disease}}
+        {{doctor}}
         {% endblock body %}
     </body>
 </html>

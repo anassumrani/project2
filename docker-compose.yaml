@@ -2,12 +2,25 @@ version: '3.8'
 services:
   doctor:
     image: doctor
+    ports:
+    - target: 5003
+      published: 5003
    
   age:
     image: age
+    ports:
+    - target: 5001
+      published: 5001
 
   service_1:
     image: service_1
+    ports:
+    - target: 5004
+      published: 5004
     
   disease:
     image: disease
+    ports:
+    - target: 5002
+      published: 5002
+      
